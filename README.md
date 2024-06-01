@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Swivl Frontend Assignment
 
-## Available Scripts
+Overview
 
-In the project directory, you can run:
+Develop a simple Task Management Application(Todo) using React
 
-### `npm start`
+Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+react js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Functionality
 
-### `npm test`
+1.###Initialize the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a new project directory and initialize it with Create React App:
+npx create-react-app task-manager
+cd task-manager
 
-### `npm run build`
+2.### Create React Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Task Component**:
+   - Display individual tasks.
+   - Show strikethrough for completed tasks.
+   - Include buttons for editing and deleting tasks.
+2. **TaskList Component**:
+   - Render a list of tasks.
+   - Manage task completion and reversion.
+   - Pass tasks and handlers as props to `Task` component.
+3. **TaskForm Component**:
+   - Provide a form to create new tasks.
+   - Manage form state and handle form submission.
+4. **EditTaskModal Component**:
+   - Provide a modal for editing tasks.
+   - Manage modal state and handle form submission to update tasks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.### Implement State Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Use React Hooks**:
+   - Utilize `useState` for managing tasks and form states.
+   - Use `useEffect` for side effects if needed.
 
-### `npm run eject`
+5.### Implement Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Task Creation**:
+   - Implement form submission in `TaskForm` to add new tasks to state.
+   - Use local state to store tasks.
+2. **Task Completion and Reversion**:
+   - Toggle strikethrough on task click to mark as complete or revert.
+   - Update the task state to reflect the changes.
+3. **Task Editing**:
+   - Show `EditTaskModal` on clicking the edit button.
+   - Update task in state on form submission.
+4. **Task Deletion**:
+   - Remove task from state on clicking delete icon.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6.### Apply Styling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Basic CSS**:
+   - Use basic CSS for styling the application.
+   - Define styles in `App.css` and import it into your components.
